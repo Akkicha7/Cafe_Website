@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRÛLÉ — Artisan Coffee</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Loader -->
+<div id="loader">
+  <div>
+    <div class="loader-text">
+      <span>B</span><span>R</span><span>Û</span><span>L</span><span>É</span>
+    </div>
+    <div class="loader-line"></div>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav>
+  <a href="#" class="nav-logo">Brûlé</a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#booking">Reserve</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <canvas id="scene-canvas"></canvas>
+  <div class="hero-content">
+    
+    <h1 class="hero-title">
+        <span>Where Every</span>
+        <em>Cup Tells</em>
+        <span>A Story</span> 
+    </h1>
+    <p class="hero-sub">Artisan roasts · Single origins · Third wave culture</p>
+    
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Single Origin Ethiopia</span>
+    <span class="marquee-item">Cold Brew on Draft</span>
+    <span class="marquee-item">Oat Milk Specialists</span>
+    <span class="marquee-item">Pour-Over Bar</span>
+    <span class="marquee-item">Artisan Pastries</span>
+    <span class="marquee-item">Seasonal Specials</span>
+    <span class="marquee-item">Live Jazz Thursdays</span>
+    <span class="marquee-item">Specialty Roasting</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item">Single Origin Ethiopia</span>
+    <span class="marquee-item">Cold Brew on Draft</span>
+    <span class="marquee-item">Oat Milk Specialists</span>
+    <span class="marquee-item">Pour-Over Bar</span>
+    <span class="marquee-item">Artisan Pastries</span>
+    <span class="marquee-item">Seasonal Specials</span>
+    <span class="marquee-item">Live Jazz Thursdays</span>
+    <span class="marquee-item">Specialty Roasting</span>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="about-visual">
+    <div class="about-card about-card-1" id="card3d1">
+      <div class="about-card-inner">☕</div>
+      <span class="card-label">Origin: Ethiopia Yirgacheffe</span>
+    </div>
+    <div class="about-card about-card-2" id="card3d2">
+      <div class="about-card-inner">♨</div>
+      <span class="card-label">Roasted in-house daily</span>
+    </div>
+  </div>
+  <div class="about-text">
+    <span class="section-number reveal">01 / Our Philosophy</span>
+    <h2 class="section-title reveal reveal-delay-1">Coffee as a<br><em>Craft,</em><br>Not a Commodity</h2>
+    <p class="about-body reveal reveal-delay-2">
+      Every bean we source tells a story of land, labor, and love. We work directly with small-scale farmers across Ethiopia, Colombia, and Guatemala — paying premium prices for extraordinary harvests. In our roastery, we coax out each bean's inherent complexity.
+    </p>
+    <div class="stats-row reveal reveal-delay-3">
+      <div class="stat">
+        <span class="stat-number">12</span>
+        <span class="stat-label">Origins</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">98°</span>
+        <span class="stat-label">Precision</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu -->
+<section id="menu">
+  <div class="menu-header">
+    <div>
+      <span class="section-number reveal">02 / The Menu</span>
+      <h2 class="section-title reveal reveal-delay-1">Curated<br><em>Selections</em></h2>
+    </div>
+    <a href="#menuItems" class="btn-outline reveal">View Full Menu</a>
+  </div>
+  <div class="menu-grid" id="menuItems">
+    <div class="menu-card menu-card-featured reveal">
+      <div class="menu-card-number">SIGNATURE</div>
+      <div class="menu-card-name">The Brûlé Ritual</div>
+      <p class="menu-card-desc">Our slow-drip cold brew, aged 24 hours, served over hand-chiseled crystal ice with a house-made vanilla bean tincture.</p>
+      <div class="menu-card-bottom">
+        <span class="menu-price">₹420</span>
+        <span class="menu-tag">House Special</span>
+      </div>
+    </div>
+    <div class="menu-card reveal reveal-delay-1">
+      <div class="menu-card-number">01</div>
+      <div class="menu-card-name">Pour Over</div>
+      <p class="menu-card-desc">Chemex-brewed, single origin — rotating weekly.</p>
+      <div class="menu-card-bottom">
+        <span class="menu-price">₹280</span>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <div class="menu-card-number">02</div>
+      <div class="menu-card-name">Cortado</div>
+      <p class="menu-card-desc">Equal parts espresso and warm oat milk, served in a Gibraltar glass.</p>
+      <div class="menu-card-bottom">
+        <span class="menu-price">₹220</span>
+      </div>
+    </div>
+    <div class="menu-card reveal reveal-delay-1">
+      <div class="menu-card-number">03</div>
+      <div class="menu-card-name">Oat Latte</div>
+      <p class="menu-card-desc">Silky steamed oat milk over double espresso with seasonal spice dust.</p>
+      <div class="menu-card-bottom">
+        <span class="menu-price">₹260</span>
+        <span class="menu-tag">Bestseller</span>
+      </div>
+    </div>
+    <div class="menu-card reveal reveal-delay-2">
+      <div class="menu-card-number">04</div>
+      <div class="menu-card-name">Café de Olla</div>
+      <p class="menu-card-desc">Traditional clay pot brew with cinnamon and piloncillo.</p>
+      <div class="menu-card-bottom">
+        <span class="menu-price">₹240</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Parallax Divider -->
+<div class="parallax-divider">
+  <canvas id="parallax-canvas"></canvas>
+  <div class="parallax-text">
+    <span>Brewing</span>
+    <em>Perfection</em>
+    <span>Since 2019</span>
+  </div>
+</div>
+
+<!-- Experience -->
+<section id="experience">
+  <span class="section-number reveal">03 / The Experience</span>
+  <h2 class="section-title reveal reveal-delay-1">More Than<br><em>Just Coffee</em></h2>
+  <div class="exp-grid">
+    <div class="exp-item reveal">
+      <div class="exp-icon">
+        <div class="exp-icon-ring"><div class="exp-icon-dot"></div></div>
+        <div class="exp-icon-inner"></div>
+      </div>
+      <h3 class="exp-title">Cupping Sessions</h3>
+      <p class="exp-text">Join our Saturday morning tastings — learn to identify flavor notes, origins, and roast profiles like a professional.</p>
+    </div>
+    <div class="exp-item reveal reveal-delay-1">
+      <div class="exp-icon">
+        <div class="exp-icon-ring" style="animation-delay: -2s"><div class="exp-icon-dot"></div></div>
+        <div class="exp-icon-inner"></div>
+      </div>
+      <h3 class="exp-title">Barista Training</h3>
+      <p class="exp-text">Private and group workshops covering espresso extraction, milk steaming, and latte art fundamentals.</p>
+    </div>
+    <div class="exp-item reveal reveal-delay-2">
+      <div class="exp-icon">
+        <div class="exp-icon-ring" style="animation-delay: -4s"><div class="exp-icon-dot"></div></div>
+        <div class="exp-icon-inner"></div>
+      </div>
+      <h3 class="exp-title">Roastery Tours</h3>
+      <p class="exp-text">Walk through our in-house roasting facility and watch the green-to-brown transformation firsthand.</p>
+    </div>
+    <div class="exp-item exp-item-large reveal reveal-delay-1">
+      <span class="section-number" style="color:var(--caramel)">The Space</span>
+      <h3 class="exp-title" style="font-size:2rem; margin-bottom:1.5rem">Designed for<br><em style="color:var(--caramel)">Deep Work & Deep Conversations</em></h3>
+      <p class="exp-text">Warm lighting, acoustically engineered interiors, and library-quiet corners. Whether you're writing your thesis or meeting a friend, Brûlé is your third place.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Booking -->
+<section id="booking">
+  <div class="booking-inner">
+    <span class="section-number reveal">04 / Reservations</span>
+    <h2 class="section-title reveal reveal-delay-1">Reserve Your<br><em>Table</em></h2>
+    <form class="booking-form reveal reveal-delay-2">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" maxlength="10" placeholder="+91 8973520287" name="phone">
+      </div>
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date">
+      </div>
+      <div class="form-group">
+        <label>Time</label>
+        <select>
+          <option>8:00 AM</option>
+          <option>10:00 AM</option>
+          <option>12:00 PM</option>
+          <option>2:00 PM</option>
+          <option>4:00 PM</option>
+          <option>6:00 PM</option>
+        </select>
+      </div>
+      <div class="form-group full">
+        <label>Guests</label>
+        <select>
+          <option>1 person</option>
+          <option>2 people</option>
+          <option>3–4 people</option>
+          <option>5+ people</option>
+        </select>
+      </div>
+      <button type="submit" class="btn-book">Confirm Reservation</button>
+    </form>
+  </div>
+</section>
+
+<!-- Map -->
+<div class="map-container">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15735.688537542152!2d79.6277!3d10.5348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a554a9c40333d4b%3A0xe546b3dd7e1ef002!2sThiruthuraipoondi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div>
+    <span class="footer-logo">Brûlé</span>
+    <p class="footer-tagline">A sanctuary for those who believe that the ritual matters as much as the result.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Navigate</h4>
+    <ul>
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#booking">Reserve</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Hours</h4>
+    <ul>
+      <li><a href="#">Mon–Fri: 7am–8pm</a></li>
+      <li><a href="#">Saturday: 8am–9pm</a></li>
+      <li><a href="#">Sunday: 9am–6pm</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Find Us</h4>
+    <ul>
+      <li><a href="#">11 Old Road Street</a></li>
+      <li><a href="#">Thiruthuraipoondi, TN</a></li>
+      <li><a href="#">+91 8973520287</a></li>
+      <li><a href="#">hello@brule.cafe</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span class="footer-copy">© 2026 Brûlé Coffee House. All rights reserved.</span>
+  <span class="footer-copy">Crafted with intention</span>
+</div>
+
+<!-- 🔥 POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <p id="popup-message">Success</p>
+  </div>
+</div>
+
+<!-- WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=918973520287&text=Hello%20Br%C3%BBl%C3%A9%20Cafe!%20I%20would%20like%20to%20get%20in%20touch." class="whatsapp-btn" target="_blank" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- JS PART -->
+<script src="script.js?v=2"></script>
+
+
+
+</body>
+</html>
