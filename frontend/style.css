@@ -208,7 +208,9 @@
   }
   .btn-primary:hover { background: var(--latte); transform: translateY(-2px); }
   .btn-outline {
-    padding: 1rem 3rem;
+    display: inline-block;
+    padding: 1.2rem 3.5rem;
+    margin-top: 1.5rem;
     border: 1px solid rgba(196,133,58,0.5);
     color: var(--latte);
     font-family: 'DM Mono', monospace;
@@ -324,7 +326,7 @@
     height: 75%;
     top: 0; left: 0;
     background: linear-gradient(135deg, #3d2012 0%, #6b3a1f 50%, #c4853a 100%);
-    transform: rotate(-3deg);
+    transform: rotate(0deg);
     transform-style: preserve-3d;
   }
   .about-card-2 {
@@ -332,18 +334,18 @@
     height: 55%;
     bottom: 0; right: 0;
     background: linear-gradient(135deg, #c4853a 0%, #e8a857 100%);
-    transform: rotate(2deg);
+    transform: rotate(0deg);
     transform-style: preserve-3d;
     transition-delay: 0.2s;
   }
   .about-card.show.about-card-1 {
   opacity: 1;
-  transform: translateX(0) rotate(-3deg);
+  transform: translateX(0) rotate(0deg);
 }
 
 .about-card.show.about-card-2 {
   opacity: 1;
-  transform: translateX(0) rotate(2deg);
+  transform: translateX(0) rotate(0deg);
 }
   .about-card-inner {
     width: 100%; height: 100%;
@@ -946,6 +948,12 @@ input.error, select.error {
 
   .about-visual {
     height: 300px;
+  }
+
+  .menu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
   }
 
   .menu-grid {
