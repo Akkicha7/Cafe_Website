@@ -633,16 +633,19 @@
   .form-group input,
   .form-group select {
     width: 100%;
-    padding: 1rem 1.2rem;
+    padding: 1.2rem 1.5rem;
+    min-height: 56px;
     background: transparent;
     border: 1px solid rgba(196,133,58,0.3);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
+    font-size: 1.15rem;
     color: var(--espresso);
     outline: none;
     transition: border-color 0.3s;
     appearance: none;
+    -webkit-appearance: none;
     cursor: none;
+    box-sizing: border-box;
   }
   .form-group input:focus,
   .form-group select:focus {
@@ -651,7 +654,7 @@
   .form-group.full { grid-column: span 2; }
   .btn-book {
     grid-column: span 2;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: 1.4rem;
     background: var(--espresso);
     color: var(--cream);
@@ -921,7 +924,19 @@ input.error, select.error {
   }
 
   .hero-sub {
-    font-size: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .about-body {
+    font-size: 1.15rem;
+  }
+
+  .menu-card-desc, .exp-text, .footer-tagline {
+    font-size: 1.05rem;
+  }
+
+  .form-group label {
+    font-size: 0.75rem;
   }
 
   #about {
